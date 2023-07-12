@@ -1,0 +1,104 @@
+.numbers_section {
+    width: min(1140px, 100%);
+    margin-inline: auto;
+    padding-block-end: 2rem;
+}
+
+.numbers_wrapper {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers_heading {
+    font-size: 34px;
+    margin-block-end: 1.25rem;
+}
+
+.numbers_para {
+    width: 100%;
+    line-height: 1.7;
+    margin-block-end: 1.25rem;
+}
+
+.numbers_card {
+    width: 25%;
+    padding: 20px 10px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers_card > svg{
+    margin-inline-end: 1.25rem;
+}
+
+.numbers_card:nth-of-type(1) > svg {
+    stroke: rgb(255, 0, 0);
+    stroke-width: 1px;
+}
+.numbers_card:nth-of-type(2) > svg {
+    fill: rgb(0, 182, 255);
+}
+.numbers_card:nth-of-type(3) > svg {
+    fill: rgb(0, 255, 75);
+}
+.numbers_card:nth-of-type(4) > svg {
+    fill: rgb(255, 106, 0);
+}
+
+.numbers_card h3 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.numbers_card span {
+    font-size: 1rem;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.numbers_card p {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+@media (max-width: 1024px) {
+    .numbers_section {
+        padding: 0;
+    }
+
+    .numbers_card > svg {
+        display: none;
+    }
+
+    .numbers_card h3 {
+        font-size: 2.25rem;
+    }
+
+    .numbers_card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .numbers_section {
+        padding: 2rem;
+    }
+
+    .numbers_card {
+        width: 50%;
+    }
+
+    .numbers_card h3 {
+        font-size: 1.75rem;
+    }
+
+    .numbers_card p {
+        font-size: 0.875rem;
+    }    
+
+}

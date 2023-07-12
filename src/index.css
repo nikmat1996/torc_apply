@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+  --woocommerce: #a46497;
+  --wc-green: #7ad03a;
+  --wc-red: #a00;
+  --wc-orange: #ffba00;
+  --wc-blue: #2ea2cc;
+  --wc-primary: #a46497;
+  --wc-primary-text: white;
+  --wc-secondary: #ebe9eb;
+  --wc-secondary-text: #515151;
+  --wc-highlight: #77a464;
+  --wc-highligh-text: white;
+  --wc-content-bg: #fff;
+  --wc-subtext: #767676;
+
+  --cl-white:#fff;
+  --cl-black: rgb(7, 12, 31);
+
+  --bg-black: #000000;
+
+  --bdt-breakpoint-s: 640px;
+  --bdt-breakpoint-m: 960px;
+  --bdt-breakpoint-l: 1200px;
+  --bdt-breakpoint-xl: 1600px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 1;
+  text-align: center;
+  color: var(--cl-black);
+}
+

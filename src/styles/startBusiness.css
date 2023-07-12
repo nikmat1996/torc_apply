@@ -1,0 +1,57 @@
+.startBusiness_section{
+    padding-block: 5em 9em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(15, 108, 77); */
+}
+
+.startBusiness_wrapper {
+    width: min(840px, 100%);
+    margin-inline: auto;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(100, 235, 235); */
+}
+
+.startBusiness_serviceList{
+    background-color: var(--bg-black);
+    color: var(--cl-white);
+    text-transform: capitalize;
+    padding: 7px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.startBusiness_heading {
+    width: 100%;
+    color: var(--cl-black);
+    font-size: 34px;
+    font-weight: 800;
+    margin-block: 2rem 1.25rem;
+}
+
+.startBusiness_para {
+    width: 100%;
+    line-height: 1.7;
+    margin-block-end: 1.25rem;
+}
+
+.startBusiness_button {
+    background-color: var(--bg-black);
+    color: var(--cl-white);
+    padding: 1.25rem 2.5rem;
+    font-size: 18px;
+    border-radius: 5px;
+    min-width: 53%;
+}
+
+@media (max-width: 767px){
+    .startBusiness_section {
+        padding: 0;
+    }
+}

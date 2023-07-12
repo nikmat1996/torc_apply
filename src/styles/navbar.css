@@ -1,0 +1,33 @@
+.navbar_wrapper {
+    width: min(1160px, 100%);
+    margin-inline: auto;
+    padding: 10px;
+    display: flex;
+    /* background-color: greenyellow; */
+}
+
+.navbar_logo-container {
+    padding: 10px;
+    flex-grow: 0;
+}
+
+.navbar_logo {
+    margin-inline: 3.25rem;
+    width: 50%;
+}
+
+.navbar_items-wrapper {
+    flex: 1 1 57rem;
+    padding: 10px;
+    width: 57rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(64, 103, 4); */
+}
+
+.navbar_items{
+    padding-inline: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
