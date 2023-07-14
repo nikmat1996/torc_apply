@@ -8,6 +8,7 @@ import ChooseUs from './components/ChooseUs'
 import Portfolio from './components/Portfolio'
 import ContactUs from './components/ContactUs'
 import Testimonials from './components/Testimonials'
+import WorkWithUs from './components/WorkWithUs'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Portfolio />
       <ContactUs />
       <Testimonials />
+      <WorkWithUs />
     </div>
   )
 }
