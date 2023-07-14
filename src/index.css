@@ -31,11 +31,7 @@
 
   --bg-black: #000000;
 
-  --bdt-breakpoint-s: 640px;
-  --bdt-breakpoint-m: 960px;
-  --bdt-breakpoint-l: 1200px;
-  --bdt-breakpoint-xl: 1600px;
-}
+
 
 *{
   box-sizing: border-box;

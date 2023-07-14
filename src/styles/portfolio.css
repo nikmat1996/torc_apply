@@ -1,0 +1,92 @@
+.portfolio_section {
+    padding-block-end: 5rem;
+    /* opacity: 0.3; */
+    position: relative;
+}
+
+.portfolio_backgroundImg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.portfolio_wrapper {
+    width: min(1140px, 100%);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio_wrapper > div {
+    width: 50%;
+    padding: .625rem;
+}
+
+.portfolio_introOutro {
+    padding: 4rem 3rem;
+}
+
+.portfolio_introOutro > h6,
+.portfolio_introOutro > h3, 
+.portfolio_project > h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-block-end: 1.25rem;
+}
+
+.portfolio_introOutro > h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-block-end: 1.25rem;
+}
+
+.portfolio_introOutro > p {
+    line-height: 1.7;
+    text-align: left;
+}
+.portfolio_introOutro > h3 {
+    text-align: center;
+}
+
+.portfolio_introOutro > button {
+    font-size: 1rem;
+    color: var(--cl-white);
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: .25rem;
+}
+
+.portfolio_project {
+    padding: 1rem;
+    margin-block: 1rem;
+    border: 1px solid var(--cl-black);
+    border-radius: 3px;
+}
+
+div > .portfolio_project:last-of-type {
+    margin-block-start: 2rem;
+}
+
+.portfolio_project > img {
+    width: 100%;
+    margin-block-end: 17px;
+    height: 228px;
+    object-fit: cover;
+}
+
+.portfolio_project > div {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio_project span {
+    padding-inline: 6px;
+    line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+    .portfolio_wrapper > div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+.contactUs--section {
+    position: relative;
+}
+
+.contactUs--backgroundImg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+    background-size: cover;
+    background-position: top 5% center;
+    background-repeat: no-repeat;
+}
+
+.contactUs--wrapper {
+    width: min(840px, 100%);
+    margin-inline: auto;
+    padding: 8rem 3rem;
+}
+
+.contactUs--wrapper > h2{
+    font-size: 1rem;
+    margin-block-end: 1.25rem;
+}
+
+.contactUs--wrapper > button {
+    padding: 1.25rem 2.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
