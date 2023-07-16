@@ -8,6 +8,15 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s ease;
+}
+
+.numbers_wrapper_show {
+    opacity: 1;
+    transform: translateY(0%);
+    
 }
 
 .numbers_heading {

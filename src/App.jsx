@@ -10,11 +10,12 @@ import ContactUs from './components/ContactUs'
 import Testimonials from './components/Testimonials'
 import WorkWithUs from './components/WorkWithUs'
 
-const App = () => {
+const App = () => {  
+
   return (
-    <div>
-      <Navbar />
-      <StartBusiness />
+    <div >
+      <Navbar  />
+      <StartBusiness  />
       <Numbers />
       <AboutUs />
       <Services />

@@ -5,6 +5,8 @@ import img from '../assets/logo.png'
 import { CgDetailsMore } from "react-icons/cg";
 
 const Navbar = () => {
+  
+  // console.log(referance)
   return (
     <section className='navbar_wrapper'>
         <div className="navbar_logo-container">

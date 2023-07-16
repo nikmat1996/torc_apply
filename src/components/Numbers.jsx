@@ -1,49 +1,56 @@
-import React from 'react';
-import '../styles/numbers.css';
-import { HiOutlineUsers } from 'react-icons/hi'
-import { FaUsers } from 'react-icons/fa'
-import { SlGlobe } from 'react-icons/sl'
-import { PiShootingStarBold } from 'react-icons/pi'
+import React, { useEffect, useRef, useState } from "react";
+import "../styles/numbers.css";
+import { HiOutlineUsers } from "react-icons/hi";
+import { FaUsers } from "react-icons/fa";
+import { SlGlobe } from "react-icons/sl";
+import { PiShootingStarBold } from "react-icons/pi";
+import { useObserver } from "./observer";
+import NumbersCard from "./NumbersCard";
 
 const Numbers = () => {
+    const [show, numberRef] = useObserver();
+    
+    const data = [{
+        'p': 'Happy Clients',
+        'num': 50,
+        'span': '+',
+        'icon': <HiOutlineUsers size={55} />
+    },{
+        'p': 'Teammates',
+        'num': 20,
+        'span': '+',
+        'icon': <FaUsers size={55} />
+    },{
+        'p': 'Countries',
+        'num': 8,
+        'span': '',
+        'icon': <SlGlobe size={55} />
 
+    },{
+        'p': 'Satisfaction',
+        'num': 100,
+        'span': '%',
+        'icon': <PiShootingStarBold size={55} />
+    }]
 
   return (
-      <section className='numbers_section'>
-          <div className="numbers_wrapper">
-              <h2 className='numbers_heading'>At Torc Infotech, our relentless aim is to innovate technology solutions that enhance</h2>
-              <p className='numbers_para'>Customer experiences and bring the world close to the mainstream adoption of digitalization and automation technology practices.</p>
-              <div className='numbers_card'>
-                  <HiOutlineUsers size={55} />
-                  <div>
-                      <h3>50<span>+</span></h3>
-                      <p>Happy Clients</p>
-                  </div>
-              </div>
-              <div className='numbers_card'>
-                  <FaUsers size={55} />
-                  <div>
-                      <h3>20<span>+</span></h3>
-                      <p>Teammates</p>
-                  </div>
-              </div>
-              <div className='numbers_card'>
-                  <SlGlobe size={55} />
-                  <div>
-                      <h3>8</h3>
-                      <p>Countries</p>
-                  </div>
-              </div>
-              <div className='numbers_card'>
-                  <PiShootingStarBold size={55} />
-                  <div>
-                      <h3>100<span>%</span></h3>
-                      <p>Satisfaction</p>
-                  </div>
-              </div>
-          </div>
+    <section className="numbers_section">
+      <div
+        className={"numbers_wrapper " + (show ? "numbers_wrapper_show" : "")}
+        ref={numberRef}
+      >
+        <h2 className="numbers_heading">
+          At Torc Infotech, our relentless aim is to innovate technology
+          solutions that enhance
+        </h2>
+        <p className="numbers_para">
+          Customer experiences and bring the world close to the mainstream
+          adoption of digitalization and automation technology practices.
+        </p>
+        {data.map(item => <NumbersCard key={item.p} show data={item} />)}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Numbers
+export default Numbers;

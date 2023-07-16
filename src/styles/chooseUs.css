@@ -16,6 +16,9 @@
 
 .chooseUs_article {
     padding: 3rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease;
 }
 
 .chooseUs_article > h6 {
@@ -65,6 +68,14 @@
 .chooseUs_figure {
     padding: 0.625rem;
     height: max-content;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+
+.chooseUs_show {
+    opacity: 1;
+    transform: translate(0%);
 }
 
 @media (max-width: 1024px) {

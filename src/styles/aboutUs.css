@@ -14,7 +14,15 @@
     width: 40%;
     padding: 0.625rem;
     height: max-content;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease;
 }   
+
+.aboutUs_img--container_show {
+    opacity: 1;
+    transform: translateX(0%);
+}
 
 .aboutUs_img {
     width: 100%;
@@ -23,6 +31,14 @@
 .aboutUs_text--container{
     width: 60%;
     padding: 3rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+
+.aboutUs_text--container_show {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 .aboutUs_text--h6 {
