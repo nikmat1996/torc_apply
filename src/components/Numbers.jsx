@@ -47,7 +47,7 @@ const Numbers = () => {
           Customer experiences and bring the world close to the mainstream
           adoption of digitalization and automation technology practices.
         </p>
-        {data.map(item => <NumbersCard key={item.p} show data={item} />)}
+        {data.map(item => <NumbersCard key={item.p} show={show} data={item} />)}
       </div>
     </section>
   );
